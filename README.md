@@ -16,7 +16,7 @@ If 'startup.nsh' does not run, you must manually find the USB filesystem, e.g. `
 ---
 **Download:**
 -
-Current Version: `1.0.0` - (RD not set)\
+Current Version: `1.0.0` - (02.02.23)\
 See the [Changelog](CHANGELOG.md).\
 Downloads can be acquired in the [releases](https://github.com/MuertoGB/MacBRTool/releases) section.
 

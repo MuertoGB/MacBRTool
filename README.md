@@ -25,8 +25,9 @@ Downloads can be acquired in the [releases](https://github.com/MuertoGB/MacBRToo
 -
 To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ using a GPT or MBR partition table, then....
 
-- Option A: Manually copy all MacBRTool.iso files to the formatted USB disk.
-- Option B: Use a bootable USB creation tool (Such as Rufus) and select MACBRTOOL.iso as the source file.
+- Option A: Manually copy all MACBRTOOL.iso files to the formatted USB disk.
+- Option B: Write the MACBRTOOL.img to disk with ddrescue, Passmark imageUSB, or similar.
+- Option C: Use a bootable USB creation tool and select MACBRTOOL.iso as the source file.
 
 ---
 **Updating the BootROM:**

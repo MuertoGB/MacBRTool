@@ -1,33 +1,46 @@
-**Mac BootROM Tool by David R:**
--
+<h1 align="center">
+<img width="200" src="resource/img/icon256.png" alt="SMCFT Logo">
+<br>
+Mac BootROM Tool
+</h1>
+
+<h4 align="center">Making BootROM flashing quicker and easier.</h4>
+
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#download">Download</a> •
+  <a href="#bootable-usb">Bootable USB</a> •
+  <a href="#updating-the-bootrom">Updating the BootROM</a> •
+  <a href="#compatibility">Compatibility</a> •
+  <a href="#disclaimers">Disclaimers</a> •
+  <a href="#acknowledgements">Acknowledgements</a> •
+  <a href="#donate">Donate</a>
+</p>
+
+## About
+
 MacBRTool is used to update targeted Mac BootROMs using Apples EFI ROM Updater in EFI mode. This makes it easy to add APFS support and update the system ROM without needing to manually flash the SPIROM IC, or boot an Operating System. Everything is done automatically from an EFI shell on a handy bootable memory stick.
 
-Before flashing the BootROM it's recommended to remove the internal storage device otherwise 'startup.nsh' may not run. Please also ensure the device is plugged in.
+## Download
 
-☕ If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto). Cheers. ☕
+| Version| Release Date| Latest|
+|--------|-------------|--------|
+|[V1.0.1](https://github.com/MuertoGB/MacBRTool/releases/tag/v1.0.1)|not Set |`Yes`|
+|[V1.0.0](https://github.com/MuertoGB/MacBRTool/releases/tag/v1.0.0)|2nd Feb 2023|`No` |
 
----
-**Before you start:**
--
-I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm also not responsible for any mistakes my end either. As they say, sometimes shit happens.
+> 📔 See the full [Changelog](CHANGELOG.md).
 
-If 'startup.nsh' does not run, you must manually find the USB filesystem, e.g. `fs7:`, then run it manually.
+## Bootable USB
 
----
-**Download:**
--
-Current Version: `1.0.0` - (02.02.23)\
-See the [Changelog](CHANGELOG.md).\
-Downloads can be acquired in the [releases](https://github.com/MuertoGB/MacBRTool/releases) section.
+To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ for use with MacBRTool.
+> ⚠ FAT32 using a GUID Partition Table (GPT) is recommended.
 
----
-**Creating a USB disk:**
--
-To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ using a GPT or MBR partition table, then....
+Once the memory stick is ready, you can do any of the following:
+- Option A: Manually copy all files from the ISO to the formatted memory stick.
+- Option B: Write the image to the memory stick with ddrescue, Passmark imageUSB, or similar.
+- Option C: Use a bootable USB creation tool and select the ISO, or image as the source file, and the memory stick as the destination.
 
-- Option A: Manually copy all MACBRTOOL.iso files to the formatted USB disk.
-- Option B: Write the MACBRTOOL.img to disk with ddrescue, Passmark imageUSB, or similar.
-- Option C: Use a bootable USB creation tool and select MACBRTOOL.iso as the source file.
+> ℹ Extended instructions [here](BOOTABLEUSB.md).
 
 ---
 **Updating the BootROM:**
@@ -38,9 +51,10 @@ To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ using a GPT or MBR par
   4. The machine will power off automatically once completed.
 
 ---
-**Compatible Systems:**
--
-**iMac**
+## Compatibility
+
+#### iMac
+
 ```
 iMac10,1   Mac-F2268CC8
 iMac11,1   Mac-F2238BAE
@@ -58,7 +72,9 @@ iMac17,1   Mac-B809C3757DA9BB8D
 iMac18,1   Mac-4B682C642B45593E
 iMac18,3   Mac-BE088AF8C5EB4FA2
 ```
-**MacBook**
+
+#### MacBook
+
 ```
 MacBook6,1   Mac-F22CBAC8
 MacBook7,1   Mac-F22CB9C8
@@ -66,7 +82,9 @@ MacBook8,1   Mac-BE0E8AC46FE800CC
 MacBook9,1   Mac-9AE82516C7C6B903
 MacBook10,1  Mac-EE2EBD4B90B839A8
 ```
-**MacBook Air**
+
+#### MacBook Air
+
 ```
 MacBookAir3,1   Mac-942452F5819B1C1B
 MacBookAir4,1   Mac-742912EFDBEE19B3
@@ -74,7 +92,9 @@ MacBookAir5,1   Mac-2E6FAB96566FE58C
 MacBookAir6,1   Mac-7DF21CB3ED6977E5
 MacBookAir7,1   Mac-937CB26E2E02BB01
 ```
-**MacBook Pro**
+
+#### MacBook Pro
+
 ```
 MacBookPro10,1   Mac-C3EC7CD22292981F
 MacBookPro10,2   Mac-AFD8A9D944EA4843
@@ -88,14 +108,17 @@ MacBookPro13,3   Mac-A5C67F76ED83108C
 MacBookPro14,1   Mac-B4831CEBD52A0C4C
 MacBookPro14,2   Mac-CAD6701F7CEA0921
 ```
----
-**Shell Screen resolution:**
--
-Use the `mode` command to display a list of supported screen modes, type the highest mode available e.g. `mode 160 47`, then press return.
 
----
-**Licenses and acknowledgements:**
--
-Startup manager icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.
+## Disclaimers
+
+I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm not responsible for any mistakes my end either.
+
+## Acknowledgements
+
+> 🖼 Project icon by [Xcoder](https://macosicons.com/#/u/Xcoder) on macOSicons.
+
+## Donate
+
+<a href="https://www.buymeacoffee.com/Muerto"><img width="160" src="https://uc80e5ba3058c2d15b2a77972a8b.previews.dropboxusercontent.com/p/thumb/AB18JbfsN4REmFgvOrzwO3ooBl2K1VkxckN-h1H0qKcNhQDfIIROLC57mhfRHlNPZXBDEK7S3gHEnx6Uc35udaYsS-Mx66J6llYd_lSwfaIAntk3eynVXJNhd5nRHFDI1ncBuDVpVbrtKeQZlP2WPhejwCDH99YAFH8xcPef9q2d37EBjVV9-cK4cGUd7KmXCfa81wP6tXXV8r7-f_5L1c6tgs9HxLgqaDlAPXG8BcM9B6NRFdxlOsLGvYh9ESFE7fMb7dTrOu7PgsBsVrrIfTOxL8akUj2QiSGMJiZNXJrYrsW7mjKu_qQ-7Z-mhlZ2ZtY-FApmMFhfQrWj17D7hiXCemMdb_SaZCbaHBucMaJZ5Y1OPY3a6XlAxUCNJXSrFoI/p.png" alt="Buy Me A Coffee Logo" vspace="5" hspace="5"></a><a href="https://www.paypal.com/donate/?hosted_button_id=Z88F3UEZB47SQ"><img width="160" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="PayPal Logo" vspace="5" hspace="5"></a>
 
 ---

@@ -1,7 +1,12 @@
-**MacBRTool Changelog:**
--
+#### Version 1.0.1
 
-**Version 1.0.0**
+```
+  - New volume icon
+  - Add readme.txt
+```
+
+#### Version 1.0.0
+
 ```
   - Initial Release
 ```

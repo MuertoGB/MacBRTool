@@ -48,7 +48,7 @@ Once the memory stick is ready, you can do any of the following:
 2. If you have a portable device, plug in the power adapter.
 3. Insert your USB stick, then power on the device whilst holding `Option ⌥`.
 4. Load into MacBRTool from the boot menu and let 'startup.nsh' run.
-5. Type updatebr.nsh then press enter, the BootROM will then be updated (if necessary).
+5. Type 'updatebr.nsh', then press return, the BootROM will then be updated (if necessary).
 6. Type `exit` to leave the shell, or power down the device to complete the process.
 
 **`startup.nsh` did not run:**\
